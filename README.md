@@ -34,36 +34,13 @@ The final step is to complete **three tasks** where you need to correctly use 
     
 3.  **Submit your homework for review.**
     
-
-### **Submission Format**
-
-*   The homework must include **two links**:
-    
-    1.  A link to the repository containing the source files (GitHub repository).
-        
-    2.  A live page link hosted on **GitHub Pages**.
-        
-*   Attach a **ZIP file** of the repository.
-    
-
-**☝ IMPORTANT**Review the **instructions** on how to upload your work file from the repository to GitHub.
-
-### **Grading Criteria**
-
-*   Score: **0 to 100**
-    
-
 **Task 1: User Account**
 ------------------------
 
 📂 **File:** task-1.js
 
 A developer broke the source code for managing user accounts in our food delivery service before quitting. Refactor the methods of the customer object by properly assigning missing this references when accessing object properties.
-
-Use the starter code below and refactor it. After the object declaration, we have added method calls. The console will display their results. **Do not modify anything there.**
-
-const customer = {    username: "Mango",    balance: 24000,    discount: 0.1,    orders: ["Burger", "Pizza", "Salad"],    // Change code below this line    getBalance() {      return balance;    },    getDiscount() {      return discount;    },    setDiscount(value) {      discount = value;    },    getOrders() {      return orders;    },    addOrder(cost, order) {      balance -= cost - cost * discount;      orders.push(order);    },    // Change code above this line  };  customer.setDiscount(0.15);  console.log(customer.getDiscount()); // 0.15  customer.addOrder(5000, "Steak");  console.log(customer.getBalance()); // 19750  console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]   `
-
+  `
 **Mentor will check:**✔ The customer variable is declared.✔ The customer variable contains an object with properties and methods.✔ customer.getDiscount() returns the current value of discount.✔ customer.setDiscount(0.15) updates the discount value.✔ customer.getBalance() returns the current value of balance.✔ customer.getOrders() returns the current value of orders.✔ customer.addOrder(5000, "Steak") adds "Steak" to the orders array and updates the balance.✔ Methods correctly use this.
 
 **Task 2: Storage**
@@ -81,11 +58,6 @@ Declare the following class methods:
     
 *   removeItem(itemToRemove) — takes a product name itemToRemove as a string and removes it from the itemsarray.
     
-
-Use the following initialization code to verify functionality. Do not modify anything.
-
-const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);  console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]  storage.addItem("Droid");  console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]  storage.removeItem("Prolonger");  console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]   `
-
 **Mentor will check:**✔ Storage class is declared.✔ Storage class contains getItems, addItem, and removeItem methods.✔ The items property is private.✔ Methods properly modify and access items.
 
 **Task 3: String Constructor**
@@ -105,11 +77,6 @@ Declare the following methods:
     
 *   padBoth(str) — adds str to both the start and end of value.
     
-
-Use the following initialization code for verification. Do not modify anything.
-
-const builder = new StringBuilder(".");  console.log(builder.getValue()); // "."  builder.padStart("^");  console.log(builder.getValue()); // "^."  builder.padEnd("^");  console.log(builder.getValue()); // "^.^"  builder.padBoth("=");  console.log(builder.getValue()); // "=^.^="   `
-
 **Mentor will check:**✔ StringBuilder class is declared.✔ value property is private.✔ getValue, padEnd, padStart, and padBoth methods exist.✔ Methods correctly modify and return value.
 
 That’s it! Good luck with your homework! 🚀
@@ -144,29 +111,11 @@ _________________________________________________
 *   Переконайся, що код відформатований за допомогою Prettier, а в консолі відсутні помилки й попередження під час відкриття живої сторінки завдання
     
 *   Здай домашнє завдання на перевірку
-    
 
-**Формат здачі:**
-
-*   Домашня робота містить два посилання: на вихідні файли (посилання на репозиторій з кодом) і живу сторінку на GitHub Pages.
-    
-*   Прикрiплений файл репозиторію у форматi zip `
-
-**Формат оцінювання:**
-
-*   Оцінка від 0 до 100
-    
-
-**Задача 1. Акаунт користувача**
+    **Задача 1. Акаунт користувача**
 Виконуй це завдання у файлі task-1.js   `
 
 Перед звільненням розробник зламав вихідний код управління акаунтами користувачів нашого сервісу доставки їжі. Виконай рефакторинг методів об'єкта customer, розставивши відсутні this під час звернення до властивостей об'єкта.
-
-Використай цей стартовий код і виконай рефакторинг. Після оголошення об'єкта ми додали виклики методів. У консоль будуть виведені результати їх роботи. Будь ласка, нічого там не змінюй.
-
-const customer = {    username: "Mango",    balance: 24000,    discount: 0.1,    orders: ["Burger", "Pizza", "Salad"],    // Change code below this line    getBalance() {      return balance;    },    getDiscount() {      return discount;    },    setDiscount(value) {      discount = value;    },    getOrders() {      return orders;    },    addOrder(cost, order) {      balance -= cost - cost * discount;      orders.push(order);    },    // Change code above this line  };  customer.setDiscount(0.15);  console.log(customer.getDiscount()); // 0.15  customer.addOrder(5000, "Steak");  console.log(customer.getBalance()); // 19750  console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]   `
-
-Залиш цей код для перевірки ментором.
 
 **На що буде звертати увагу ментор при перевірці:**
 
@@ -209,13 +158,6 @@ const customer = {    username: "Mango",    balance: 24000,    discount: 0.1,   
     
 *   removeItem(itemToRemove) — приймає рядок з назвою товару itemToRemove і видаляє його з масиву товарів у приватній властивості items об'єкта.
     
-
-Візьми код нижче з ініціалізацією екземпляра й викликами методів і встав його після оголошення класу для перевірки коректності роботи. У консоль будуть виведені результати їх роботи. Будь ласка, нічого там не змінюй.
-
-const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);  console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]  storage.addItem("Droid");  console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]  storage.removeItem("Prolonger");  console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]   `
-
-Залиш цей код для перевірки ментором.
-
 **На що буде звертати увагу ментор при перевірці:**
 
 *   Оголошений клас Storage
@@ -261,13 +203,6 @@ const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);  cons
     
 *   padBoth(str) — отримує параметр str (рядок) і додає його на початок і в кінець значення приватної властивості value об'єкта, який викликає цей метод.
     
-
-Візьми код нижче з ініціалізацією екземпляра й викликами методів і встав його після оголошення класу для перевірки коректності роботи. У консоль будуть виведені результати їх роботи. Будь ласка, нічого там не змінюй.
-
-const builder = new StringBuilder(".");  console.log(builder.getValue()); // "."  builder.padStart("^");  console.log(builder.getValue()); // "^."  builder.padEnd("^");  console.log(builder.getValue()); // "^.^"  builder.padBoth("=");  console.log(builder.getValue()); // "=^.^="   `
-
-Залиш цей код для перевірки ментором.
-
 **На що буде звертати увагу ментор при перевірці:**
 
 *   Оголошений клас StringBuilder
