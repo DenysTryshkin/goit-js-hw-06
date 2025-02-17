@@ -62,7 +62,7 @@ A developer broke the source code for managing user accounts in our food deliver
 
 Use the starter code below and refactor it. After the object declaration, we have added method calls. The console will display their results. **Do not modify anything there.**
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   const customer = {    username: "Mango",    balance: 24000,    discount: 0.1,    orders: ["Burger", "Pizza", "Salad"],    // Change code below this line    getBalance() {      return balance;    },    getDiscount() {      return discount;    },    setDiscount(value) {      discount = value;    },    getOrders() {      return orders;    },    addOrder(cost, order) {      balance -= cost - cost * discount;      orders.push(order);    },    // Change code above this line  };  customer.setDiscount(0.15);  console.log(customer.getDiscount()); // 0.15  customer.addOrder(5000, "Steak");  console.log(customer.getBalance()); // 19750  console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]   `
+const customer = {    username: "Mango",    balance: 24000,    discount: 0.1,    orders: ["Burger", "Pizza", "Salad"],    // Change code below this line    getBalance() {      return balance;    },    getDiscount() {      return discount;    },    setDiscount(value) {      discount = value;    },    getOrders() {      return orders;    },    addOrder(cost, order) {      balance -= cost - cost * discount;      orders.push(order);    },    // Change code above this line  };  customer.setDiscount(0.15);  console.log(customer.getDiscount()); // 0.15  customer.addOrder(5000, "Steak");  console.log(customer.getBalance()); // 19750  console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]   `
 
 **Mentor will check:**✔ The customer variable is declared.✔ The customer variable contains an object with properties and methods.✔ customer.getDiscount() returns the current value of discount.✔ customer.setDiscount(0.15) updates the discount value.✔ customer.getBalance() returns the current value of balance.✔ customer.getOrders() returns the current value of orders.✔ customer.addOrder(5000, "Steak") adds "Steak" to the orders array and updates the balance.✔ Methods correctly use this.
 
@@ -84,7 +84,7 @@ Declare the following class methods:
 
 Use the following initialization code to verify functionality. Do not modify anything.
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);  console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]  storage.addItem("Droid");  console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]  storage.removeItem("Prolonger");  console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]   `
+const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);  console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]  storage.addItem("Droid");  console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]  storage.removeItem("Prolonger");  console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]   `
 
 **Mentor will check:**✔ Storage class is declared.✔ Storage class contains getItems, addItem, and removeItem methods.✔ The items property is private.✔ Methods properly modify and access items.
 
@@ -108,7 +108,7 @@ Declare the following methods:
 
 Use the following initialization code for verification. Do not modify anything.
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   const builder = new StringBuilder(".");  console.log(builder.getValue()); // "."  builder.padStart("^");  console.log(builder.getValue()); // "^."  builder.padEnd("^");  console.log(builder.getValue()); // "^.^"  builder.padBoth("=");  console.log(builder.getValue()); // "=^.^="   `
+const builder = new StringBuilder(".");  console.log(builder.getValue()); // "."  builder.padStart("^");  console.log(builder.getValue()); // "^."  builder.padEnd("^");  console.log(builder.getValue()); // "^.^"  builder.padBoth("=");  console.log(builder.getValue()); // "=^.^="   `
 
 **Mentor will check:**✔ StringBuilder class is declared.✔ value property is private.✔ getValue, padEnd, padStart, and padBoth methods exist.✔ Methods correctly modify and return value.
 
@@ -131,7 +131,7 @@ _________________________________________________
 *   використовуєш прототипне наслідування, класи для створення однотипних об'єктів з однаковим набором властивостей, але різними значеннями
     
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   Що далі?  Останній крок — виконати 3 задачі, де треба правильно використати ключове слово this, створити клас для управління складом товарів та налаштувати конструктор рядків. Цікаво, чи не так?  Погнали!   `
+Що далі?  Останній крок — виконати 3 задачі, де треба правильно використати ключове слово this, створити клас для управління складом товарів та налаштувати конструктор рядків. Цікаво, чи не так?  Погнали!   `
 
 **Домашнє завдання Тема 10. ООП. Класи**
 
@@ -139,9 +139,6 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
     
 *   У папці goit-js-hw-06 створи структуру проєкта, як показано на схемі нижче.
     
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   Зверни увагу! Імена файлів та папок, а також їх структура вкладеності, мають відповідати вказаній схемі. В іншому разі робота не буде прийнята.   `
-
 *   Прочитай кожне завдання і виконай його у відповідному файлі.
     
 *   Переконайся, що код відформатований за допомогою Prettier, а в консолі відсутні помилки й попередження під час відкриття живої сторінки завдання
@@ -153,10 +150,7 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 *   Домашня робота містить два посилання: на вихідні файли (посилання на репозиторій з кодом) і живу сторінку на GitHub Pages.
     
-*   Прикрiплений файл репозиторію у форматi zip
-    
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   ☝ ВАЖЛИВО  Переглянь Iнструкцію щодо завантаження робочого файлу з репозиторію на Github   `
+*   Прикрiплений файл репозиторію у форматi zip `
 
 **Формат оцінювання:**
 
@@ -164,14 +158,13 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
     
 
 **Задача 1. Акаунт користувача**
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   Виконуй це завдання у файлі task-1.js   `
+Виконуй це завдання у файлі task-1.js   `
 
 Перед звільненням розробник зламав вихідний код управління акаунтами користувачів нашого сервісу доставки їжі. Виконай рефакторинг методів об'єкта customer, розставивши відсутні this під час звернення до властивостей об'єкта.
 
 Використай цей стартовий код і виконай рефакторинг. Після оголошення об'єкта ми додали виклики методів. У консоль будуть виведені результати їх роботи. Будь ласка, нічого там не змінюй.
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   const customer = {    username: "Mango",    balance: 24000,    discount: 0.1,    orders: ["Burger", "Pizza", "Salad"],    // Change code below this line    getBalance() {      return balance;    },    getDiscount() {      return discount;    },    setDiscount(value) {      discount = value;    },    getOrders() {      return orders;    },    addOrder(cost, order) {      balance -= cost - cost * discount;      orders.push(order);    },    // Change code above this line  };  customer.setDiscount(0.15);  console.log(customer.getDiscount()); // 0.15  customer.addOrder(5000, "Steak");  console.log(customer.getBalance()); // 19750  console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]   `
+const customer = {    username: "Mango",    balance: 24000,    discount: 0.1,    orders: ["Burger", "Pizza", "Salad"],    // Change code below this line    getBalance() {      return balance;    },    getDiscount() {      return discount;    },    setDiscount(value) {      discount = value;    },    getOrders() {      return orders;    },    addOrder(cost, order) {      balance -= cost - cost * discount;      orders.push(order);    },    // Change code above this line  };  customer.setDiscount(0.15);  console.log(customer.getDiscount()); // 0.15  customer.addOrder(5000, "Steak");  console.log(customer.getBalance()); // 19750  console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]   `
 
 Залиш цей код для перевірки ментором.
 
@@ -204,7 +197,7 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 **Задача 2. Склад**
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   Виконуй це завдання у файлі task-2.js   `
+Виконуй це завдання у файлі task-2.js   `
 
 Створи клас Storage, який створюватиме об'єкти для управління складом товарів. Клас очікує лише один аргумент — початковий масив товарів, який записується до створеного об'єкта в приватну властивість items.
 
@@ -219,7 +212,7 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 Візьми код нижче з ініціалізацією екземпляра й викликами методів і встав його після оголошення класу для перевірки коректності роботи. У консоль будуть виведені результати їх роботи. Будь ласка, нічого там не змінюй.
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);  console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]  storage.addItem("Droid");  console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]  storage.removeItem("Prolonger");  console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]   `
+const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);  console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]  storage.addItem("Droid");  console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]  storage.removeItem("Prolonger");  console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]   `
 
 Залиш цей код для перевірки ментором.
 
@@ -254,7 +247,7 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 ﻿**Задача 3. Конструктор рядків**
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   Виконуй це завдання у файлі task-3.js   `
+Виконуй це завдання у файлі task-3.js   `
 
 Напиши клас StringBuilder, який приймає один параметр initialValue — довільний рядок, який записується у приватну властивість value об'єкта, що створюється.
 
@@ -271,7 +264,7 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 Візьми код нижче з ініціалізацією екземпляра й викликами методів і встав його після оголошення класу для перевірки коректності роботи. У консоль будуть виведені результати їх роботи. Будь ласка, нічого там не змінюй.
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   const builder = new StringBuilder(".");  console.log(builder.getValue()); // "."  builder.padStart("^");  console.log(builder.getValue()); // "^."  builder.padEnd("^");  console.log(builder.getValue()); // "^.^"  builder.padBoth("=");  console.log(builder.getValue()); // "=^.^="   `
+const builder = new StringBuilder(".");  console.log(builder.getValue()); // "."  builder.padStart("^");  console.log(builder.getValue()); // "^."  builder.padEnd("^");  console.log(builder.getValue()); // "^.^"  builder.padBoth("=");  console.log(builder.getValue()); // "=^.^="   `
 
 Залиш цей код для перевірки ментором.
 
